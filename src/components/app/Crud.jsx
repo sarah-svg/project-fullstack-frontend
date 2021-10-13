@@ -26,7 +26,7 @@ function Crud({ onSubmit, onChange, image, locations, id, method }) {
           />
           <input
             type="text" placeholder=" add new map locations"
-            name="image" value={image} onChange={onChange}         
+            name="location" value={locations} onChange={onChange}         
           />
         </div>
         <div>
@@ -102,7 +102,7 @@ function Crud({ onSubmit, onChange, image, locations, id, method }) {
           <input 
             type="text" 
             placeholder="Update locations" 
-            name="type"
+            name="locations"
             value={locations}
             onChange={onChange} />
   
