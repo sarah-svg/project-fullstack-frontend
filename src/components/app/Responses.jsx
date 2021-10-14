@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ResOne from './app/Res-One';
+import ResOne from './Res-One';
 
 function Responses({ res }) {
   const resElements = res.map((item) => {

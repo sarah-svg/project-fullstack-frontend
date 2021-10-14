@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { getMap } from '../../utlis';
-import Responses from '../Responses';
+import Responses from './Responses';
 
 
 function MultRes() {

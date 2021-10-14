@@ -6,7 +6,7 @@ import Crud from './Crud';
 
 describe('App component', () => {
   afterEach(() => cleanup());
-  it('renders App', () => {
+  it('renders crud', () => {
     const { asFragment } = render(<MemoryRouter> <Crud/></MemoryRouter>);
     expect(asFragment()).toMatchSnapshot();
   });
