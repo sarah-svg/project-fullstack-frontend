@@ -9,7 +9,7 @@ function ResOne({ image, locations }) {
     <div>
       <figure>
         <img src={image}></img>
-        <figcaption>{locations }</figcaption>
+        <figcaption>{locations }</figcaption>rt 
       </figure>
     </div>
   );

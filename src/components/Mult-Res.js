@@ -1,33 +1,22 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from 'react';
 
+import React, { useState, useEffect } from 'react';
 import { getMap } from '../utlis';
-import ResOne from './Res-One';
+import Responses from './Responses';
+
 
 function MultRes() {
 
   const [res, setRes] = useState([]);
+  const [loading, setLoading] = useState(true);
     
   useEffect(() => {
-    getMap().then(response => setRes(response));
+    getMap().then(res => setRes(res));
+    setLoading(false);
   }, []);
-    
-  const resElem = res.map((item) => {
-    console.log(item, 'heyyyyy');
-    // eslint-disable-next-line react/jsx-key
-    // return ;
-    <li>
-      <div>{...item}</div>
-    </li>;
-  });
-
-
-  return (
-    <ul>
-      { resElem}
-    </ul>
-  );
+  console.log(res, 'res');
+  if(loading) return <div>Loading...</div>;
+  return <div><Responses res={res} /></div>;
+  
 }
 
 // MultRes.propTypes = {

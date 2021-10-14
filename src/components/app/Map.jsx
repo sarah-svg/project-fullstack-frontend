@@ -10,7 +10,7 @@ import {
 } from '../../utlis';
 
 import Crud from './Crud';
-// import Result from './Result';
+import Result from './Result';
 export default class Map extends Component {
     state = {
       image: '',
@@ -72,7 +72,7 @@ export default class Map extends Component {
             })}
           </div> */}
         
-          {/* <Result response={response}/> */}
+          <Result response={response}/>
         </div>
       );
     }

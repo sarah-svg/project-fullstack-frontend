@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import ReactJson from 'react-json-view';
 
 function Result({ response }) {
+  console.log(response[0], 'from result page');
   return (
     <div>
       <ReactJson src={response} />
        
-      <div>{response.image}</div>
-      <div>{response.locations }</div>
+   
     </div>
   );
 }
