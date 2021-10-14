@@ -11,6 +11,8 @@ import {
 
 import Crud from './Crud';
 import Result from './Result';
+import axios from 'axios';
+
 export default class Map extends Component {
     state = {
       image: '',

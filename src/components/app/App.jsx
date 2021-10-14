@@ -7,6 +7,7 @@ import {
 import MultRes from './Mult-Res';
 
 import Map from './Map';
+import ImageUpload from './Image-upload';
 
 
 export default function App() {
@@ -24,6 +25,6 @@ export default function App() {
       <Route exact path="/map" component={Map}/>
       <Route exact path="/all" component={MultRes}/>
     </Switch>
- 
+    <ImageUpload/>
   </>;
 }
