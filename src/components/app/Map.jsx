@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 
 import React, { Component } from 'react';
 import {
@@ -7,8 +8,9 @@ import {
   postMap,
   updateMap
 } from '../../utlis';
+
 import Crud from './Crud';
-import Result from './Result';
+// import Result from './Result';
 export default class Map extends Component {
     state = {
       image: '',
@@ -20,6 +22,10 @@ export default class Map extends Component {
     handleChange = ({ target }) => {
       this.setState({ [target.name]: target.value });
     }
+    componentDidMount = async () => {
+      await getMap().then(response => this.setState({ response }));
+    }
+  
     handleSubmit = (e) => {
       e.preventDefault();
       const { image, locations, method, id } = this.state;
@@ -49,7 +55,7 @@ export default class Map extends Component {
         locations,
         response,
         method } = this.state;
- 
+      console.log(response);
       return (
         <div>
           <Crud
@@ -58,7 +64,15 @@ export default class Map extends Component {
             method={method}
             onChange={this.handleChange}
             onSubmit={this.handleSubmit} />
-          <Result response={response}/>
+          {/* <MultRes response= {response}/> */}
+          {/* <div className="strainList">
+            {response.map((item, i) => {
+              return <ResOne key={i} image={item.image}
+                location={item.locations} />;
+            })}
+          </div> */}
+        
+          {/* <Result response={response}/> */}
         </div>
       );
     }
