@@ -1,5 +1,5 @@
 {
-  "name":"wes-lab",
+  "name": "wes-lab",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -61,6 +61,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-json-view": "^1.20.5",
+    "react-router": "^5.2.1",
     "react-router-dom": "^5.2.0"
   }
 }
