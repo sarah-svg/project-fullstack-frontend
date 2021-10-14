@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<DocumentFragment>
+   
+  <div>
+    <form>
+      <title>
+        Map
+      </title>
+      <h1>
+        Please select one of the options to add, update, or get all of you maps
+      </h1>
+      <div>
+        <input
+          id="post"
+          name="method"
+          placeholder="Enter post"
+          type="radio"
+          value="post"
+        />
+        <label
+          for="post"
+        >
+          Add a map to your database
+        </label>
+        <input
+          name="image"
+          placeholder=" add new map image"
+          type="text"
+          value=""
+        />
+        <input
+          name="location"
+          placeholder=" add new map locations"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          id="get"
+          name="method"
+          type="radio"
+          value="get"
+        />
+        <label
+          for="get"
+        >
+          Get all Maps
+        </label>
+      </div>
+      <div>
+        <input
+          id="find"
+          name="method"
+          type="radio"
+          value="find"
+        />
+        <label
+          for="find"
+        >
+          Find Map by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Map"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          id="delete"
+          name="method"
+          type="radio"
+          value="delete"
+        />
+        <label
+          for="delete"
+        >
+          Delete Map by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Map"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          id="put"
+          name="method"
+          type="radio"
+          value="put"
+        />
+        <label
+          for="put"
+        >
+          Update map by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Map"
+          type="text"
+          value=""
+        />
+        <br />
+        <input
+          name="image"
+          placeholder="Update image"
+          type="text"
+          value=""
+        />
+        <input
+          name="locations"
+          placeholder="{1,2,3}"
+          type="text"
+          value=""
+        />
+      </div>
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
