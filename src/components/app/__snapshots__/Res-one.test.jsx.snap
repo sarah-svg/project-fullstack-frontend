@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<DocumentFragment>
+   
+  <div>
+    <figure>
+      <span>
+         Map id: 
+      </span>
+      <img />
+      <figcaption>
+        Map burn pile size
+      </figcaption>
+    </figure>
+  </div>
+</DocumentFragment>
+`;
