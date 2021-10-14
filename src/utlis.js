@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 // const URL = 'https://localhost7899/api/v1/dogs';
-const URL = 'https://whispering-caverns-94096.herokuapp.com/api/v1/maps/';
+const URL = 'https://whispering-caverns-94096.herokuapp.com/api/v1/maps';
 
 
 export const postMap = (image, locations) => {

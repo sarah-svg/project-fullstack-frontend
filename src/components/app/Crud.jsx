@@ -101,7 +101,7 @@ function Crud({ onSubmit, onChange, image, locations, id, method }) {
   
           <input 
             type="text" 
-            placeholder="Update locations" 
+            placeholder="{1,2,3}" 
             name="locations"
             value={locations}
             onChange={onChange} />

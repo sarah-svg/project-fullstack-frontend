@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import ReactJson from 'react-json-view';
 
 function Result({ response }) {
@@ -15,14 +13,25 @@ function Result({ response }) {
     </div>
   );
 }
+// function Result({ response }) {
+//   console.log(response.image);
+ 
+
+//   return (
+//     <div>
+//     hello
+//     </div>
+//   );
+// }
+  
 
 
-// Result.propTypes = {
-//   response: PropTypes.oneOfType([
-//     PropTypes.arrayOf,
-//     PropTypes.object
-//   ])
-// };
+Result.propTypes = {
+  response: PropTypes.oneOfType([
+    PropTypes.arrayOf,
+    PropTypes.object
+  ])
+};
 
 export default Result;
 

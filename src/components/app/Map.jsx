@@ -49,6 +49,7 @@ export default class Map extends Component {
         locations,
         response,
         method } = this.state;
+ 
       return (
         <div>
           <Crud
