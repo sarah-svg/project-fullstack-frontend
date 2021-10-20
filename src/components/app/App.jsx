@@ -7,7 +7,11 @@ import {
 import MultRes from './Mult-Res';
 
 import Map from './Map';
-import ImageUpload from './Image-upload';
+// import Image from './Image';
+// import UHH from './UHH';
+// import AddMapp from '../AddMapp';
+
+
 
 
 export default function App() {
@@ -20,11 +24,11 @@ export default function App() {
 
     <br></br>
     <Link to="/all">Get all of your maps</Link>
-    
+    <Link to="/image">Seeing if this image hits my database</Link>
     <Switch>
       <Route exact path="/map" component={Map}/>
-      <Route exact path="/all" component={MultRes}/>
+      <Route exact path="/all" component={MultRes} />
     </Switch>
-    <ImageUpload/>
+
   </>;
 }

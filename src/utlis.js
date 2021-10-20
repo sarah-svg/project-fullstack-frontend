@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import fetch from 'node-fetch';
 
 // const URL = 'https://localhost7899/api/v1/dogs';
@@ -39,7 +40,24 @@ export const updateMap = async (id, image, locations) => {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
-  }).then(res => res.json()).then(results => console.log(results));
+  }).then(res => res.json());
 };
-  
+
+export const imageUploader = async () => {
+  fetch(`${URL}/image-upload`, {
+    method: 'POST',
+    body: 'formData'
+  })
+    .then(res => {
+      if(!res.ok) {
+        throw res;
+      }
+      return res.json();
+    }).catch(err => {
+      err.json().then(e => {
+        console.error(e);
+      });
+    });
+};
+
 

@@ -21,7 +21,8 @@ export default class Map extends Component {
       response: {},
       id: ''
     };
-    handleChange = ({ target }) => {
+  handleChange = ({ target }) => {
+      
       this.setState({ [target.name]: target.value });
     }
     componentDidMount = async () => {

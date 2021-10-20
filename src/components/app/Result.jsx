@@ -13,12 +13,12 @@ function Result({ response }) {
   );
 }
 
-Result.propTypes = {
-  response: PropTypes.oneOfType([
-    PropTypes.arrayOf,
-    PropTypes.object
-  ])
-};
+// Result.propTypes = {
+//   response: PropTypes.oneOfType([
+//     PropTypes.arrayOf,
+//     PropTypes.object
+//   ])
+// };
 
 export default Result;
 

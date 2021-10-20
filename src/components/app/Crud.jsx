@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Crud({ onSubmit, onChange, image, locations, id, method }) {
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form encType="multipart/form-data" action="/" onSubmit={onSubmit}>
         <title>Map</title>
         <h1>Please select one of
                     the options to add, update, or get all of you maps</h1>
@@ -21,7 +21,7 @@ function Crud({ onSubmit, onChange, image, locations, id, method }) {
           />
           <label htmlFor="post">Add a map to your database</label>
           <input
-            type="text" placeholder=" add new map image"
+            type="file" placeholder=" add new map image"
             name="image" value={image} onChange={onChange}
           />
           <input
