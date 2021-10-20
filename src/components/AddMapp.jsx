@@ -5,8 +5,8 @@ import Result from './app/Result';
 
 
 function AddMapp() {
-    const [image, setImg] = useState('');
-    const [locations, setLocations] = useState('');
+  const [image, setImg] = useState('');
+  const [locations, setLocations] = useState('');
   const [response, setResponce] = useState('');
 
   useEffect(() => {
@@ -24,8 +24,8 @@ function AddMapp() {
       locations: e.target[1].value,
       
     };
-      setImg(e.target[0].value);
-      setLocations(e.target[1].value)
+    setImg(e.target[0].value);
+    setLocations(e.target[1].value);
     await postMap(newMap);
     this.props.history.push('all');
 

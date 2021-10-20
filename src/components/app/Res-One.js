@@ -4,7 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ResOne({ image, locations, id }) {
-  console.log(image, locations);
+  console.log(image, 'image', locations);
+
+
   return (
     <div>
       <figure>

@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ResOne from './Res-One';
 
+
 function Responses({ res }) {
   const resElements = res.map((item) => {
     return (
-      <div key={res.image + res.locations}>
+      // eslint-disable-next-line max-len
+      <div key={res.image + res.id + res.locations * Math.random(res.id + 1)   }>
         <ResOne {...item}/>
             
       </div>

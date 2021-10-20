@@ -24,7 +24,7 @@ export default function App() {
 
     <br></br>
     <Link to="/all">Get all of your maps</Link>
-    <Link to="/image">Seeing if this image hits my database</Link>
+   
     <Switch>
       <Route exact path="/map" component={Map}/>
       <Route exact path="/all" component={MultRes} />

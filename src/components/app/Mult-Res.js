@@ -8,10 +8,20 @@ function MultRes() {
 
   const [res, setRes] = useState([]);
   const [loading, setLoading] = useState(true);
-    
+ 
+  // getMap().then(res => setRes(res));
+ 
   useEffect(() => {
-    getMap().then(res => setRes(res));
-    setLoading(false);
+    const image2 = `fakepath//${res.image}`;
+    getMap().then(res => setRes(res)).then(setLoading(false));
+    if(res.image === image2) {
+      res.image = `fakepath//${res.image}`;
+      return  res;
+    
+    } else return res;
+      
+   
+    
   }, []);
 
   if(loading) return <div>Loading...</div>;

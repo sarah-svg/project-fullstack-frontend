@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-console */
 
 import React, { Component } from 'react';
@@ -11,7 +12,6 @@ import {
 
 import Crud from './Crud';
 import Result from './Result';
-import axios from 'axios';
 
 export default class Map extends Component {
     state = {
@@ -22,9 +22,10 @@ export default class Map extends Component {
       id: ''
     };
   handleChange = ({ target }) => {
-      
-      this.setState({ [target.name]: target.value });
-    }
+   
+    console.log(target.value.replace('C:\\fakepath\\', ''));
+    this.setState({ [target.name]: target.value });
+  }
     componentDidMount = async () => {
       await getMap().then(response => this.setState({ response }));
     }
@@ -36,9 +37,8 @@ export default class Map extends Component {
       if(method === 'post') {
         postMap(image, locations)
           .then(res => this.setState({
-            name: res.name,
-            type: res.type,
-            characteristic: res.characteristic,
+            image: res.image,
+            location: res.locations,
             response: res
           }));
       }

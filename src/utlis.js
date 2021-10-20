@@ -1,22 +1,22 @@
 /* eslint-disable no-console */
 import fetch from 'node-fetch';
 
-// const URL = 'https://localhost7899/api/v1/dogs';
-const URL = 'https://whispering-caverns-94096.herokuapp.com/api/v1/maps';
+ const URL = 'http://localhost:8888/api/v1/maps';
+// const URL = 'https://whispering-caverns-94096.herokuapp.com/api/v1/maps';
 
 
-export const postMap = (image, locations) => {
+export const postMap = async (image, locations) => {
   const data = { image, locations };
     
-  return fetch(`${URL}`, {
+  return await fetch(`${URL}`, {
     method: 'POST',
     body: JSON.stringify(data),
     headers: { 'Content-Type': 'application/json' }
   }).then(res => res.json());
 };
 
-export const getMap = () => {
-  return fetch(`${URL}`)
+export const getMap = async () => {
+  return await fetch(`${URL}`)
     .then(res => res.json());
 };
 
